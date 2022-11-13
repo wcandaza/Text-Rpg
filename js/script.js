@@ -60,7 +60,7 @@ comDoneBtn.addEventListener("click", comDoneAction);
 comDoneBtn.setAttribute("disabled", "");
 function comDoneAction () {
 
-    document.querySelector(".giphy-embed").style.display = "none";
+
     document.querySelector("#display").innerHTML = "";
     document.querySelector("#display2").innerHTML = "";
     document.querySelector("#display3").innerHTML = "";
@@ -99,7 +99,7 @@ function comTurnAction() {
     let Die = Math.ceil(Math.random(1) * 20)
     console.log(Die);
     turnDie.innerHTML = "Die result " + Die;
-    document.querySelector(".giphy-embed").style.display = "block";
+   
     
     let x = parseInt(comHcStat.textContent);
     if (Die <= x) {
@@ -140,8 +140,10 @@ function comSuperActive() {
 // com super buttons 
 let comDeal10Btn = document.querySelector("#com-deal10");
 comDeal10Btn.addEventListener("click", comDeal10Action);
+comDeal10Btn.style.display = "none";
 let comGain10Btn = document.querySelector("#com-gain10");
 comGain10Btn.addEventListener("click", comGain10Action);
+comGain10Btn.style.display = "none";
 let comGain3ApBtn = document.querySelector("#com-gain3-ap");
 comGain3ApBtn.addEventListener("click", comGain3ApAction);
 let comGain3HcBtn = document.querySelector("#com-gain3-hc");
@@ -289,7 +291,7 @@ function userTurnAction() {
     let Die = Math.ceil(Math.random(1) * 20)
     console.log(Die);
     turnDie.innerHTML = "Die result " + Die;
-    document.querySelector(".giphy-embed").style.display = "block";
+    
 
     let x = parseInt(userHcStat.textContent);
 
@@ -332,8 +334,10 @@ function userSuperActive() {
 // user super buttons 
 let userDeal10Btn = document.querySelector("#user-deal10");
 userDeal10Btn.addEventListener("click", userDeal10Action);
+userDeal10Btn.style.display = "none";
 let userGain10Btn = document.querySelector("#user-gain10");
 userGain10Btn.addEventListener("click", userGain10Action);
+userGain10Btn.style.display = "none";
 let userGain3ApBtn = document.querySelector("#user-gain3-ap");
 userGain3ApBtn.addEventListener("click", userGain3ApAction);
 let userGain3HcBtn = document.querySelector("#user-gain3-hc");
@@ -442,7 +446,7 @@ userDoneBtn.addEventListener("click", userDoneAction);
 userDoneBtn.setAttribute("disabled", "");
 function userDoneAction () {
 
-    document.querySelector(".giphy-embed").style.display = "none";
+ 
     document.querySelector("#display").innerHTML = "";
     document.querySelector("#display2").innerHTML = "";
     document.querySelector("#display3").innerHTML = "";

@@ -1,6 +1,45 @@
-.giphy-embed {
-    pointer-events: none;
-    display: none;
-    
+body {
+    padding: 0;
+    margin: 0;
 }
+#containerbg {
+    background-image: url("../images/castle.jpg");
+    height: 100vh;
+    width: 1000px;
+    margin: auto;
+    background-repeat: no-repeat;
+
+}
+#comBackground {
+    background-color: rgba(44, 36, 36, .5);
+    height: 70vh;
+    border-radius: 10px;
+    margin-left: 150px;
+    margin-top: 130px;
+    float: left;
+}
+#userBackground {
+    background-color: rgba(44, 36, 36, .5);
+    height: 70vh;
+    border-radius: 10px;
+    margin-right: 150px;
+    margin-top: 130px;
+    float: right;
+
+}
+#turnResult {
+    background-color: rgba(248, 229, 206, .7);
+    height: 40vh;
+    margin-top: 200px;
+    /* float: left; */
+}
+#rulesbg {
+    background-color: rgba(31, 27, 27, .8);
+    margin: 50px;
+    padding: 20px;
+    color: white;
+    font-family: monospace;
+    font-size: 25px;
+}
+
 
